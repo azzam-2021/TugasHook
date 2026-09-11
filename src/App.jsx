@@ -1,19 +1,19 @@
-import Card from "./components/Card"
-import Footer from "./components/Footer"
-import Header from "./components/Header"
-import Nav from "./components/Navbar"
-import Fragment from "./components/Fragment"
-import Props from "./components/Props"
-import Tugas from "./assets/Tugas4"
-import Dasar from "./Hooks/Dasar"
-import UseState from "./Hooks/UseState"
-import Praktek from "./Hooks/Praktek/Usestate"
-import Praktek2 from "./Hooks/Praktek/Usestate2"
-import BasicRef from "./Hooks/UseRef"
-import TugasStateRef from "./Hooks/Praktek/tugasStateRef"
+import Card from "./components/Card";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
+import Nav from "./components/Navbar";
+import Fragment from "./components/Fragment";
+import Props from "./components/Props";
+import Tugas from "./assets/Tugas4";
+import Dasar from "./UseStateRef/Dasar";
+import UseState from "./UseStateRef/UseState";
+import Praktek from "./UseStateRef/Praktek/Usestate";
+import Praktek2 from "./UseStateRef/Praktek/Usestate2";
+import BasicRef from "./UseStateRef/UseRef";
+import TugasStateRef from "./UseStateRef/Praktek/tugasStateRef";
 
 function Halodunia() {
-  return <h1>Halo dunia</h1>
+  return <h1>Halo dunia</h1>;
 }
 
 export default function App() {
@@ -23,30 +23,30 @@ export default function App() {
       nama: "Yuji",
       peran: "IT",
       islulus: true,
-      isStar: true
+      isStar: true,
     },
     {
       id: 2,
       nama: "Doni",
       peran: "MTK",
       islulus: true,
-      isStar: false
+      isStar: false,
     },
     {
       id: 3,
       nama: "Sam",
       peran: "IPS",
       islulus: false,
-      isStar: true
+      isStar: true,
     },
     {
       id: 4,
       nama: "Rio",
       peran: "Gatau",
       islulus: false,
-      isStar: false
+      isStar: false,
     },
-  ]
+  ];
 
   return (
     <>
@@ -70,7 +70,7 @@ export default function App() {
               islulus={students.islulus}
               isStar={students.isStar}
             />
-          )
+          );
         })}
       </section>
       <section className="bg-gray-300 p-2">
@@ -85,5 +85,5 @@ export default function App() {
       <BasicRef />
       <TugasStateRef />
     </>
-  )
+  );
 }
